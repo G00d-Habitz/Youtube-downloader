@@ -1,13 +1,9 @@
 from pytube import YouTube
-from sys import argv, exit
+from sys import exit
 
 
-link = argv[1]
-
-try:
-    resolution = argv[2]
-except:
-    pass
+link = input("Podaj link: ")
+resolution = input("Podaj pożądaną rozdzielczość: ")
 
 try:
     video = YouTube(link)
